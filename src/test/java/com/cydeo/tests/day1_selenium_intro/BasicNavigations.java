@@ -17,6 +17,9 @@ public class BasicNavigations {
         //3 - go to the Tesla.com
         driver.get("https://www.tesla.com");
 
+        //this line will maximize the browser size
+        driver.manage().window().maximize();
+
         //get the title of the page
         String currentTitle = driver.getTitle();
         System.out.println("currentTitle = " + currentTitle);
@@ -51,6 +54,12 @@ public class BasicNavigations {
         //getting the current URL using selenium
         currentURL = driver.getCurrentUrl();
         System.out.println("currentURL = " + currentURL);
+
+        //this will close the currently open window
+        driver.quit();
+
+        //this will close all of the  opened window
+        driver.close();
 
 
 
