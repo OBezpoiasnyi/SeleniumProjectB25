@@ -14,17 +14,17 @@ public class WebDriverFactory {
             if(browserType.equalsIgnoreCase("chrome")){
                 WebDriverManager.chromedriver().setup();
                 WebDriver driver = new ChromeDriver();
-                driver.manage().window().maximize();
+                //driver.manage().window().maximize();
                 return driver;
             }else if(browserType.equalsIgnoreCase("firefox")){
                 WebDriverManager.firefoxdriver().setup();
                 WebDriver driver = new FirefoxDriver();
-                driver.manage().window().maximize();
+                //driver.manage().window().maximize();
                 return driver;
             }else if(browserType.equalsIgnoreCase("safari")){
                 WebDriverManager.safaridriver().setup();
                 WebDriver driver = new SafariDriver();
-                driver.manage().window().maximize();
+               // driver.manage().window().maximize();
                 return driver;
             }
             return null;
