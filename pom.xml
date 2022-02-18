@@ -16,6 +16,7 @@
 
     <dependencies>
 
+
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
@@ -30,7 +31,16 @@
             <version>5.0.3</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.5</version>
+            <scope>test</scope>
+        </dependency>
 
     </dependencies>
+
+
 
 </project>
